@@ -1,0 +1,65 @@
+.job-detail {
+  background-color: #ffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.job-detail__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.job-detail__header__company,
+.job-detail__info,
+.job-detail__summary,
+.job-detail__salary {  /* Added .job-detail__salary */
+  text-align: left;
+}
+
+.job-detail__header__company {
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+.job-detail__header__company__rating {
+  color: #f09820;
+ 
+}
+
+.job-detail__header__apply {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.job-detail__info {
+  margin-bottom: 10px;
+}
+
+.job-detail__info__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.job-detail__info__location,
+.job-detail__info__employment-type,
+.job-detail__info__closing-date {
+  margin-bottom: 5px;
+  color: #888;
+}
+
+.job-detail__summary {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.job-detail__salary {  /* Added styles for salary */
+  margin-top: 5px;  /* Add some space above salary */
+}

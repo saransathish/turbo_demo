@@ -1,0 +1,21 @@
+{
+  "name": "job-search-platform",
+  "devDependencies": {
+    "turbo": "^2.0.1"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "node apps/api/dist/main"
+  },
+  "packageManager": "npm@10.0.0",
+  "dependencies": {
+    "@apollo/client": "^3.10.4",
+    "graphql": "^16.8.1",
+    "react-icons": "^5.2.1"
+  }
+}

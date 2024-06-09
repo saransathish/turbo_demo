@@ -1,0 +1,96 @@
+/* src/components/JobCard.css */
+.job-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    border-radius: 10px;
+    border-bottom: none; /* Remove the bottom border to make them look continuous */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.job-card:last-child {
+    border-bottom: 1px solid #ddd; /* Add bottom border to the last card */
+}
+
+/* .job-card.active {
+    background-color: #f0f8ff;
+}
+
+.job-card:hover {
+    background-color: #f5f5f5;
+} */
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 14px;
+    color: #555;
+}
+
+.bookmark-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.job-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align job details to the left */
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+}
+.job-location{
+    text-align: left;
+   
+}
+.job-salary {
+    font-size: 14px;
+    color: #777;
+    text-align: left; /* Add some spacing */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-title {
+        font-size: 16px;
+    }
+
+    .company-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .company-name,
+    .job-location,
+    .job-salary {
+        font-size: 12px;
+    }
+}
